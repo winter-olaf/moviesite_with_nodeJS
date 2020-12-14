@@ -6,6 +6,13 @@
 2020.12.13 (Sunday) ~
 # 진행과정
 
+## ISSUE!!
+### 1
+SSH 키를 등록했음에도 push할 때 아이디와 비밀번호를 요구하는 문제가 있었는데,
+이것은 터미널이 깃 익스텐션이 활성화되기 전에 켜졌었기 때문이다.
+**Note : When terminal comes up before the Git extension activated**
+껐다 켜니 해결되었다.
+
 ## React!!
 const = constant. 다른 파일에서도 해당 변수를 사용할수 있도록
 
