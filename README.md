@@ -9,7 +9,18 @@
 ## React!!
 const = constant. 다른 파일에서도 해당 변수를 사용할수 있도록
 
-### 기초공사
+### Setting
+npm install을 하니 역시나 엄청난 에러가. 그 해결을 위한 과정.
+
+#### antd doesn't export Icon package. Change to ant-design.
+Icon을 가져오는 부분이 바뀌었다. 수정해 준다.
+```
+client/
+npm install @ant-design/icons --save-dev
+```
+
+여기까지 하니 변수를 사용하지 않고 있다는 Warning만 남은 상태.
+
 ```
 npm install
 ```
@@ -20,4 +31,3 @@ Install npm in root, client directory.
 링크 : https://www.themoviedb.org/
 Setting - API에서 키 받아 오는데, 사용하는 이유에 API를 단독으로 써 넣어야 elaborate(정교한)하다고 판단한다. 허허
 
-### 이미지는 어떻게 가져오나?
