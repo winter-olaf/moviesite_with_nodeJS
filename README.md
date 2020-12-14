@@ -31,3 +31,11 @@ Install npm in root, client directory.
 링크 : https://www.themoviedb.org/
 Setting - API에서 키 받아 오는데, 사용하는 이유에 API를 단독으로 써 넣어야 elaborate(정교한)하다고 판단한다. 허허
 
+movie api v3 : 234c446afa7c9156e6c9a101b724f5ae
+
+### 랜딩페이지 만들기
+#### 메인 영화 이미지 가져오기
+API로 호출하기 때문에 구성하는 단계에 MainImage를 컴포넌트로 뿌리기만 하면 가져오기도 전에
+렌더링하면서, 정보가 null하다는 에러를 출력한다. 따라서 &&를 사용해서 가져와야 한다.
+
+&&를 사용함으로써 MainMovieImage를 가져왔을 경우에만 렌더링하라는 의미가 되고, 에러 없이 정상적으로 출력할 수 있다.
