@@ -10,7 +10,7 @@
 ### 1
 SSH 키를 등록했음에도 push할 때 아이디와 비밀번호를 요구하는 문제가 있었는데,
 이것은 터미널이 깃 익스텐션이 활성화되기 전에 켜졌었기 때문이다.
-**Note : When terminal comes up before the Git extension activated**
+**(When terminal comes up before the Git extension activated)**
 껐다 켜니 해결되었다.
 
 ## React!!
@@ -46,3 +46,14 @@ API로 호출하기 때문에 구성하는 단계에 MainImage를 컴포넌트�
 렌더링하면서, 정보가 null하다는 에러를 출력한다. 따라서 &&를 사용해서 가져와야 한다.
 
 &&를 사용함으로써 MainMovieImage를 가져왔을 경우에만 렌더링하라는 의미가 되고, 에러 없이 정상적으로 출력할 수 있다.
+
+### 그리드 만들기
+commons 폴더를 하나 생성한다.
+
+### useState의 사용 (나중에 보기)
+response 앞에 ...를 붙여야 results(array type)를 정상적으로 출력하는 모습을 보였다.
+강의에서는 ...를 뺐지만 강사의 코드에는 있길래 써 봤더니 그제야 된다. 뭐가 다른 것일까?
+
+### 더보기 버튼 만들기
+...response.results로 두면, 내용을 더 넣을 경우 덮어씌운다(overwrite).
+추가를 하게 하려면 원래 있던 State를 앞에 넣어 주면 된다.
